@@ -2,6 +2,17 @@
 // │ Your code here! │	
 // └─────────────────┘
 
+function isAdmin(user) {
+    return (user.userRole === "ADMIN") ? true : false
+}
+
+function getEmail(user) {
+    return `${user.firstName.toLowerCase()}.${user.lastName.toLowerCase()}@codeimmersives.com`
+}
+
+function getPlaylistLength(playlist) {
+    return playlist.songs.length
+}
 
 
 // ┌─────────────────────────────────────┐
